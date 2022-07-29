@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>百度前端作业</title>
+    <link rel="shortcut icon" type="image/x-icon" href="作业.ico"/>
+</head>
+<body>
+<div id="app">
+    <input v-model="name" v-on:click="hello" type="text">
+    <input v-model="id" type="text" placeholder="enter student id here">
+    <input v-model="sex" type="text" placeholder="enter sex here">
+    <input v-model="major" type="text" placeholder="enter major here">
+    <h1>{{name}}'s basicInfo</h1>
+    age > <span>{{age}} </span><br>
+    id > <span>{{id}}</span><br>
+    sex > <span>{{sex}}</span><br>
+    major > <span>{{major}}</span>
+</div>
+<script type="text/javascript" src="./dist/doubleBond.js">
+</script>
+</body>
+</html>

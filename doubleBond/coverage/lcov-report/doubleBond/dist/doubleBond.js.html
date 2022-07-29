@@ -1,0 +1,343 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for doubleBond/dist/doubleBond.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">doubleBond/dist</a> doubleBond.js</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/14</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/2</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/6</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/14</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input oninput="onInput()" type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ <span class="cstat-no" title="statement not covered" >(<span class="fstat-no" title="function not covered" >()</span> =&gt; { // webpackBootstrap</span>
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = (<span class="cstat-no" title="statement not covered" >{</span>
+&nbsp;
+/***/ "./doubleBond.ts":
+/*!***********************!*\
+  !*** ./doubleBond.ts ***!
+  \***********************/
+/***/ (<span class="fstat-no" title="function not covered" >(_</span>_unused_webpack_module, exports, __webpack_require__) =&gt; {
+&nbsp;
+<span class="cstat-no" title="statement not covered" >eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.Observer = exports.Subject = exports.currentObs = void 0;\r\nconst myMVVM_1 = __webpack_require__(/*! ./myMVVM */ \"./myMVVM.ts\");\r\nexports.currentObs = null;\r\nlet id = 0;\r\nclass Subject {\r\n    constructor() {\r\n        this.id = id++;\r\n        this.observers = [];\r\n    }\r\n    addObserver(observer) {\r\n        console.log('addObserver');\r\n        this.observers.push(observer);\r\n    }\r\n    removerObserver(observer) {\r\n        var index = this.observers.indexOf(observer);\r\n        if (index &gt; -1) {\r\n            this.observers.splice(index, 1);\r\n        }\r\n    }\r\n    notify() {\r\n        console.log('notify fun in class subject');\r\n        this.observers.forEach(observer =&gt; {\r\n            observer.update();\r\n        });\r\n    }\r\n}\r\nexports.Subject = Subject;\r\nclass Observer {\r\n    constructor(vm, key, callback) {\r\n        this.subjects = {};\r\n        this.vm = vm;\r\n        this.key = key;\r\n        this.callback = callback;\r\n        this.val = this.getVal();\r\n    }\r\n    update() {\r\n        console.log('update fun in class observer');\r\n        var oldVal = this.val;\r\n        var newVal = this.getVal();\r\n        if (oldVal !== newVal) {\r\n            this.val = newVal;\r\n            this.callback.bind(this.vm)(newVal, oldVal);\r\n        }\r\n    }\r\n    getVal() {\r\n        console.log('getValue fun in class observer');\r\n        exports.currentObs = this;\r\n        let val = this.vm.data[this.key];\r\n        exports.currentObs = null;\r\n        return val;\r\n    }\r\n    subscribeTo(subj) {\r\n        let id = subj.id;\r\n        if (!this.subjects[id]) {\r\n            subj.addObserver(this);\r\n            this.subjects[id] = subj;\r\n            console.log('property ' + this.key + ' subscribe to ' + 'subject ' + subj.id);\r\n        }\r\n    }\r\n}\r\nexports.Observer = Observer;\r\nlet testMvvm = new myMVVM_1.MVVM({\r\n    node: \"#app\",\r\n    data: {\r\n        name: 'Reese',\r\n        age: 20,\r\n        sex: '',\r\n        major: '',\r\n        id: 123456789,\r\n    },\r\n    methods: {\r\n        hello: function () {\r\n            alert('welcome!');\r\n        }\r\n    }\r\n});\r\n\n\n//# sourceURL=webpack://doublebond/./doubleBond.ts?");</span>
+&nbsp;
+/***/ }),
+&nbsp;
+/***/ "./myCompiler.ts":
+/*!***********************!*\
+  !*** ./myCompiler.ts ***!
+  \***********************/
+/***/ (<span class="fstat-no" title="function not covered" >(_</span>_unused_webpack_module, exports, __webpack_require__) =&gt; {
+&nbsp;
+<span class="cstat-no" title="statement not covered" >eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.Compile = void 0;\r\nconst doubleBond_1 = __webpack_require__(/*! ./doubleBond */ \"./doubleBond.ts\");\r\nclass Compile {\r\n    constructor(vm) {\r\n        this.vm = vm;\r\n        this.node = vm.node;\r\n        this.compile();\r\n    }\r\n    compile() {\r\n        this.traverse(this.node);\r\n    }\r\n    traverse(node) {\r\n        if (node.nodeType === 1) {\r\n            this.compileNode(node);\r\n            node.childNodes.forEach((childNode) =&gt; {\r\n                this.traverse(childNode);\r\n            });\r\n        }\r\n        else if (node.nodeType === 3) {\r\n            this.renderText(node);\r\n        }\r\n    }\r\n    // 处理指令\r\n    compileNode(node) {\r\n        let attrsArr = Array.from(node.attributes);\r\n        attrsArr.forEach((attr) =&gt; {\r\n            if (this.isModel(attr.name)) {\r\n                this.bindModel(node, attr);\r\n            }\r\n            else if (this.isHandle(attr.name)) {\r\n                this.bindHandle(node, attr);\r\n            }\r\n        });\r\n    }\r\n    bindModel(node, attr) {\r\n        let key = attr.value;\r\n        node.value = this.vm.data[key];\r\n        new doubleBond_1.Observer(this.vm, key, function (newVal) {\r\n            node.value = newVal;\r\n        });\r\n        node.oninput = (e) =&gt; {\r\n            this.vm.data[key] = e.target.value;\r\n        };\r\n    }\r\n    bindHandle(node, attr) {\r\n        let startIndex = attr.name.indexOf(':') + 1;\r\n        let endIndex = attr.name.length;\r\n        let eventType = attr.name.substring(startIndex, attr.name.length);\r\n        let method = attr.value;\r\n        node.addEventListener(eventType, this.vm.methods[method]);\r\n    }\r\n    // 判断指令\r\n    isModel(attrName) {\r\n        return (attrName === 'v-model');\r\n    }\r\n    isHandle(attrName) {\r\n        return (attrName.indexOf('v-on') &gt; -1);\r\n    }\r\n    renderText(node) {\r\n        let reg = /{{(.+?)}}/g;\r\n        let match;\r\n        while (match = reg.exec(node.nodeValue)) {\r\n            let sample = match[0];\r\n            let key = match[1].trim();\r\n            node.nodeValue = node.nodeValue.replace(sample, this.vm.data[key]);\r\n            new doubleBond_1.Observer(this.vm, key, function (newVal, oldVal) {\r\n                node.nodeValue = node.nodeValue.replace(oldVal, newVal);\r\n            });\r\n        }\r\n    }\r\n}\r\nexports.Compile = Compile;\r\n\n\n//# sourceURL=webpack://doublebond/./myCompiler.ts?");</span>
+&nbsp;
+/***/ }),
+&nbsp;
+/***/ "./myMVVM.ts":
+/*!*******************!*\
+  !*** ./myMVVM.ts ***!
+  \*******************/
+/***/ (<span class="fstat-no" title="function not covered" >(_</span>_unused_webpack_module, exports, __webpack_require__) =&gt; {
+&nbsp;
+<span class="cstat-no" title="statement not covered" >eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.MVVM = void 0;\r\nconst myCompiler_1 = __webpack_require__(/*! ./myCompiler */ \"./myCompiler.ts\");\r\nconst myObserve_1 = __webpack_require__(/*! ./myObserve */ \"./myObserve.ts\");\r\nclass MVVM {\r\n    constructor(opts) {\r\n        this.data = opts.data;\r\n        this.init(opts);\r\n        (0, myObserve_1.observe)(this.data);\r\n        new myCompiler_1.Compile(this);\r\n    }\r\n    init(opts) {\r\n        this.node = document.querySelector(opts.node);\r\n        this.data = opts.data || {};\r\n        this.methods = opts.methods || {};\r\n        for (let key in this.methods) {\r\n            this.methods[key] = this.methods[key].bind(this);\r\n        }\r\n        for (let key in this.data) {\r\n            Object.defineProperty(this, key, {\r\n                enumerable: true,\r\n                configurable: true,\r\n                get: () =&gt; {\r\n                    return this.data[key];\r\n                },\r\n                set: (newVal) =&gt; {\r\n                    this.data[key] = newVal;\r\n                }\r\n            });\r\n        }\r\n    }\r\n}\r\nexports.MVVM = MVVM;\r\n\n\n//# sourceURL=webpack://doublebond/./myMVVM.ts?");</span>
+&nbsp;
+/***/ }),
+&nbsp;
+/***/ "./myObserve.ts":
+/*!**********************!*\
+  !*** ./myObserve.ts ***!
+  \**********************/
+/***/ (<span class="fstat-no" title="function not covered" >(_</span>_unused_webpack_module, exports, __webpack_require__) =&gt; {
+&nbsp;
+<span class="cstat-no" title="statement not covered" >eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.observe = void 0;\r\nconst doubleBond_1 = __webpack_require__(/*! ./doubleBond */ \"./doubleBond.ts\");\r\nconst doubleBond_2 = __webpack_require__(/*! ./doubleBond */ \"./doubleBond.ts\");\r\nfunction observe(data) {\r\n    if (!data || typeof data !== 'object')\r\n        return;\r\n    for (var key in data) {\r\n        let val = data[key];\r\n        let subj = new doubleBond_1.Subject();\r\n        Object.defineProperty(data, key, {\r\n            enumerable: true,\r\n            configurable: true,\r\n            get: function () {\r\n                if (doubleBond_2.currentObs) {\r\n                    console.log('currentObs exist : ' + doubleBond_2.currentObs.key);\r\n                    doubleBond_2.currentObs.subscribeTo(subj);\r\n                }\r\n                return val;\r\n            },\r\n            set: function (newVal) {\r\n                val = newVal;\r\n                subj.notify();\r\n            }\r\n        });\r\n        if (typeof val === 'object') {\r\n            observe(val);\r\n        }\r\n    }\r\n}\r\nexports.observe = observe;\r\n\n\n//# sourceURL=webpack://doublebond/./myObserve.ts?");</span>
+&nbsp;
+/***/ })
+&nbsp;
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = <span class="cstat-no" title="statement not covered" >{};</span>
+/******/ 	
+/******/ 	// The require function
+/******/ 	function <span class="fstat-no" title="function not covered" >__webpack_require__(</span>moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = <span class="cstat-no" title="statement not covered" >__webpack_module_cache__[moduleId];</span>
+/******/ 		<span class="cstat-no" title="statement not covered" >if (cachedModule !== undefined) {</span>
+/******/ 			<span class="cstat-no" title="statement not covered" >return cachedModule.exports;</span>
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = <span class="cstat-no" title="statement not covered" >__webpack_module_cache__[moduleId] = {</span>
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		<span class="cstat-no" title="statement not covered" >__webpack_modules__[moduleId](module, module.exports, __webpack_require__);</span>
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		<span class="cstat-no" title="statement not covered" >return module.exports;</span>
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module is referenced by other modules so it can't be inlined
+/******/ 	var __webpack_exports__ = <span class="cstat-no" title="statement not covered" >__webpack_require__("./doubleBond.ts");</span>
+/******/ 	
+/******/ })()
+;</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2022-07-21T02:54:44.347Z
+            </div>
+        <script src="../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../sorter.js"></script>
+        <script src="../../block-navigation.js"></script>
+    </body>
+</html>
+    
